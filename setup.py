@@ -1,42 +1,55 @@
-# setup.py
 import os
+from pathlib import Path
+import logging
 
-folders = [
-    "data",
-    "data/processed",
-    "data/raw",
-    "data/external",
-    "data/transformed",
-    "docs",
-    "models",
-    "notebooks",
-    "references",
-    "reports",
-    "reports/figures",
-    "src",
-    "src/data",
-    "src/features",
-    "src/models",
-    "src/visualization",
+logging.basicConfig(filename='running_info.log', level=logging.INFO, format='[%(asctime)s]: %(message)s:')
+
+
+project_name = "mlProject"
+
+
+list_of_files = [
+    ".github/workflows/.gitkeep",
+    f"src/{project_name}/__init__.py",
+    f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/utils/__init__.py",
+    f"src/{project_name}/utils/common.py",
+    f"src/{project_name}/config/__init__.py",
+    f"src/{project_name}/config/configuration.py",
+    f"src/{project_name}/pipeline/__init__.py",
+    f"src/{project_name}/entity/__init__.py",
+    f"src/{project_name}/entity/config_entity.py",
+    f"src/{project_name}/constants/__init__.py",
+    "config/config.yaml",
+    "params.yaml",
+    "schema.yaml",
+    "main.py",
+    "app.py",
+    "Dockerfile",
+    "requirements.txt",
+    "setup.py",
+    "research/trials.ipynb",
+    "templates/index.html",
+    "test.py"
+
+
 ]
 
 
-for folder in folders:
-    os.makedirs(folder, exist_ok=True)
-    with open(os.path.join(folder, ".gitkeep"), "w") as f:
-        pass
+for filepath in list_of_files:
+    filepath = Path(filepath)
+    filedir, filename = os.path.split(filepath)
 
-files = [
-    "src/__init__.py",
-    "src/data/make_dataset.py",
-    "src/features/build_features.py",
-    "src/models/train_model.py",
-    "src/models/predict_model.py",
-    "src/visualization/visualize.py",
-    "requirements.txt"
-]
 
-for file in files:
-    with open(file, "w") as f:
-        pass
+    if filedir !="":
+        os.makedirs(filedir, exist_ok=True)
+        logging.info(f"Creating directory; {filedir} for the file: {filename}")
 
+    if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
+        with open(filepath, "w") as f:
+            pass
+            logging.info(f"Creating empty file: {filepath}")
+
+
+    else:
+        logging.info(f"{filename} already exists")
