@@ -1,0 +1,15 @@
+artifact_uri: file:///home/tousside/Documents/10academy/week0/ten-academy-week0/mlruns/0/c9cb7cd8bdbf4f34b48af3040c3d2e66/artifacts
+end_time: 1747678108251
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c9cb7cd8bdbf4f34b48af3040c3d2e66
+run_name: sedate-bear-813
+run_uuid: c9cb7cd8bdbf4f34b48af3040c3d2e66
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747678106010
+status: 3
+tags: []
+user_id: tousside

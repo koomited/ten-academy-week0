@@ -1,0 +1,15 @@
+artifact_uri: file:///home/tousside/Documents/10academy/week0/ten-academy-week0/mlruns/0/a4e6f11ac97d4715958836c32f1e2b38/artifacts
+end_time: 1747676858858
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a4e6f11ac97d4715958836c32f1e2b38
+run_name: bouncy-elk-775
+run_uuid: a4e6f11ac97d4715958836c32f1e2b38
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747676858848
+status: 3
+tags: []
+user_id: tousside

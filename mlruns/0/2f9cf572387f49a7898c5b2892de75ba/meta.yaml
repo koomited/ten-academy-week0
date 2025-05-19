@@ -1,0 +1,15 @@
+artifact_uri: file:///home/tousside/Documents/10academy/week0/ten-academy-week0/mlruns/0/2f9cf572387f49a7898c5b2892de75ba/artifacts
+end_time: 1747677952281
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2f9cf572387f49a7898c5b2892de75ba
+run_name: amazing-panda-45
+run_uuid: 2f9cf572387f49a7898c5b2892de75ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747677949374
+status: 3
+tags: []
+user_id: tousside

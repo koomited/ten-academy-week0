@@ -21,16 +21,16 @@
 Clone the repository
 
 ```bash
-https://github.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow
+https://github.com/koomited/ten-academy-week0
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-conda create -n mlproj python=3.8 -y
+python3 -m venv env
 ```
 
 ```bash
-conda activate mlproj
+source env/bin/activate
 ```
 
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ```bash
 # Finally run the following command
-python app.py
+python3 app.py
 ```
 
 Now,
@@ -63,20 +63,18 @@ open up you local host and port
 ### dagshub
 [dagshub](https://dagshub.com/)
 
-MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow.mlflow \
-MLFLOW_TRACKING_USERNAME=entbappy \
-MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
-python script.py
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/koomi/ten-academy-week0.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="koomi"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="b918e1b0fdebad41476188587e7a2996300c6ee2"
 
 Run this to export as env variables:
 
 ```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow.mlflow
+export MLFLOW_TRACKING_URI=https://dagshub.com/koomi/ten-academy-week0.mlflow
+export MLFLOW_TRACKING_USERNAME=koomi 
 
-export MLFLOW_TRACKING_USERNAME=entbappy 
-
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
+export MLFLOW_TRACKING_PASSWORD=b918e1b0fdebad41476188587e7a2996300c6ee2
 
 ```
 

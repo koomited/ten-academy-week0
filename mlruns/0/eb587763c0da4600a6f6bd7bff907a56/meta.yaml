@@ -1,0 +1,15 @@
+artifact_uri: file:///home/tousside/Documents/10academy/week0/ten-academy-week0/mlruns/0/eb587763c0da4600a6f6bd7bff907a56/artifacts
+end_time: 1747392317662
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eb587763c0da4600a6f6bd7bff907a56
+run_name: unique-toad-581
+run_uuid: eb587763c0da4600a6f6bd7bff907a56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747392317649
+status: 4
+tags: []
+user_id: tousside
