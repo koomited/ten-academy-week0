@@ -46,7 +46,7 @@ jobs:
           REGION: ${{ secrets.GCP_REGION }}
           REPOSITORY: ${{ secrets.GCP_ARTIFACT_REGISTRY_REPOSITORY }}
         run: |
-          IMAGE_URI="$REGION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/mlproj:latest"
+          IMAGE_URI="$REGION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/${{ secrets.GCP_ARTIFACT_REGISTRY_REPOSITORY }}:latest"
           gcloud run deploy mlproj \
             --image="$IMAGE_URI" \
             --platform=managed \
