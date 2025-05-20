@@ -95,7 +95,7 @@ export MLFLOW_TRACKING_PASSWORD=b918e1b0fdebad41476188587e7a2996300c6ee2
 
 	#Descripion: About the deployment
 
-	1. Build docker image of the source code ok
+	1. Build docker image of the source code
 
 	2. Push your docker image to ECR
 
